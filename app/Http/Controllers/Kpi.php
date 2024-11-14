@@ -10,13 +10,10 @@ class Kpi extends Controller
 {
     public function index(Request $request)
     {
-        // Fetch all unique unit names for the dropdown
         $units = DB::table('employee_kpis')->select('unit_name')->distinct()->get();
 
-        // Get the selected unit from the request, if any
         $selectedUnit = $request->input('unit_name');
 
-        // Fetch KPI data filtered by the selected unit, if chosen
         $query = DB::table('employee_kpis');
         if ($selectedUnit) {
             $query->where('unit_name', $selectedUnit);
