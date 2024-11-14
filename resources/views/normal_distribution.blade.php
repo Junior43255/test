@@ -88,7 +88,7 @@
         </div>
 
         <div style="width: 80%; margin: auto;" class="mt-5">
-            <h4>กราฟแสดงจำนวนคนตาม rank</h4>
+            <h4>กราฟแสดงจำนวนคนตาม Grade</h4>
             <canvas id="rankDistributionChart"></canvas>
         </div>
         <div class="my-5">
@@ -197,7 +197,7 @@
         data: {
             labels: labels,
             datasets: [{
-                label: 'Number of People',
+                label: 'จำนวนคน',
                 data: data,
                 backgroundColor: 'rgba(54, 162, 235, 0.8)',
                 borderColor: 'rgba(54, 162, 235, 1)',
