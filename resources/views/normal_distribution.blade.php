@@ -144,11 +144,11 @@
                     label: 'Normal Distribution',
                     data: yValues,
                     borderColor: 'blue',
-                    backgroundColor: 'rgba(0, 123, 255, 0.2)', // Light blue shading
-                    fill: true, // Fill under the curve
+                    backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                    fill: true,
                     pointRadius: 0,
                     borderWidth: 2,
-                    tension: 0.4 // Smooth curve
+                    tension: 0.4
                 },
                 {
                     label: 'Mean',
@@ -182,14 +182,14 @@
             },
             elements: {
                 line: {
-                    fill: '-1' // Shades below the line
+                    fill: '-1'
                 }
             }
         }
     });
 
-    const labels = @json(array_keys($gradeCounts)); // ['A', 'B', 'C', 'D']
-    const data = @json(array_values($gradeCounts)); // [2, 3, 3, 2]
+    const labels = @json(array_keys($gradeCounts));
+    const data = @json(array_values($gradeCounts));
 
     const rankDistributionChart = document.getElementById('rankDistributionChart').getContext('2d');
     new Chart(rankDistributionChart, {
