@@ -151,7 +151,7 @@
                     tension: 0.4
                 },
                 {
-                    label: 'Mean',
+                    label: 'ค่าเฉลี่ย',
                     data: yValues.map((y, i) => (xValues[i]) == mean.toFixed(2) ? y : 0),
                     borderColor: 'red',
                     borderWidth: 2,
